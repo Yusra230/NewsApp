@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>News App</title>
+    <link rel="icon" href="newspaper-regular.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg container" aria-label="Offcanvas navbar large">
+        <div class="container-fluid">
+            <a class="navbar-brand logo-image" href="index.html">
+                <img src="logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2"
+                aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar2"
+                aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item text-center">
+                            <a class="nav-link active" aria-current="page" id="Coding" href="#"
+                                onclick="onNavItemClick('Coding')">Coding</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="#" id="psl" onclick="onNavItemClick('psl')">PSL</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="#" id="Finance" onclick="onNavItemClick('Finance')">Finance</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="#" id="Politics" onclick="onNavItemClick('Politics')">Politics</a>
+                        </li>
+                        <li class="nav-item text-center">
+                            <a class="nav-link" href="#" id="Technology"
+                                onclick="onNavItemClick('Technology')">Technology</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3 mt-lg-0" role="search">
+                        <input class="form-control me-2" id="search-text" type="search" placeholder="Search"
+                            aria-label="Search" data-last-active-input="">
+                        <button class="btn btn-outline-success" id="search-button" type="submit"
+                            onclick="searchByValue();">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+        <div class="p-4 p-md-5 mb-4 rounded container text-center background-color">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 px-0"> <!-- Change col-lg-6 to col-lg-8 -->
+                    <h4>Welcome to Coding <span class="color-pink">Shuttle </span>News</h4>
+                    <h4 class="display-6">Bringing the World to Your Fingertips👈</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-3 container main-card rounded">
+            
+        </div>
+
+        <div class="album py-5 bg-body-tertiary rounded">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" id="cards-container">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

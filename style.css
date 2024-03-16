@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "News Cycle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo-image img {
+    width: 10rem;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    font-weight: bolder;
+}
+
+.col {
+    cursor: pointer;
+    transition: all;
+    margin-bottom: 1rem;
+}
+
+.col:hover {
+    transform:translateY(5px);
+}
+
+
+.news-title {
+    font-weight: bolder;
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
+.news-src {
+   font-weight: 600;
+   color: grey;
+}
+
+#news-img {
+    width: 100%;
+    height: 11rem;
+}
+
+.card {
+    width:22rem ;
+    height: 24rem;
+}
+
+
+
+.card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+}
+
+.active {
+    border-bottom: 2px solid #D1124F;
+    border-radius: 0.3rem;
+    font-weight: bold;
+}
+
+.btn-outline-success {
+    border: 1px solid #D1124F;
+    color: #D1124F;
+}
+
+.btn-outline-success:hover {
+    background-color: #D1124F;
+    color: white;
+    border: 1px solid #D1124F;
+}
+
+/* main card  */
+.color-pink {
+    color: #D1124F;
+}
+
+.background-color {
+    background-color: rgb(245,245,245);
+}
+
+.main-card img {
+    width: auto;
+}
+
+.main-card {
+    border: none;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 990px) {
+    .nav-link.active {
+        display: inline-block;
+        width: auto;
+    }
+
+
+    #news-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+   .card {
+    width: auto;
+    height: auto;
+   }
+}
+
